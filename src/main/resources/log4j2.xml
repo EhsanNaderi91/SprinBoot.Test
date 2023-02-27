@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="%sn %d{yyyy/MM/dd HH:mm:ss,SSS} %r [%-6p] [%t] %c{3} %C{3}.%M(%F:%L) - %m%n">
+            </PatternLayout>
+        </Console>
+        <RollingFile name="RollingFile"
+                     fileName=".logs/spring-boot-logger-log4j2.log"
+                     filePattern="target/log4j2/roll-by-time/app.%d{MM-dd-yyyy-HH-mm}-%i.log.gz">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} %p %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <OnStartupTriggeringPolicy/>
+                <SizeBasedTriggerinPolicy
+                    size="30Mb"/>
+                <TimeBaseTriggeringPolicy/>
+            </Policies>
+        </RollingFile>
+        <Async name="AsyncAppender">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="RollingFile"/>
+        </Async>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.tetra.bank.web.rest" level="trace" additivity="false">
+            <AppenderRef ref ="Console">
+
+            </AppenderRef>
+        </Logger>
+
+        <Root level="info">
+            <AppenderRef ref="AsyncAppender">
+
+            </AppenderRef>
+        </Root>
+    </Loggers>
+</Configuration>

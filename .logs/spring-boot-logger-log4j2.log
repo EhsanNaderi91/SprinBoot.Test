@@ -1,0 +1,21 @@
+2023-02-27 19:06:11 INFO Could not detect default configuration classes for test class [com.tetra.bank.BankApplicationTests]: BankApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-02-27 19:06:12 INFO Found @SpringBootConfiguration com.tetra.bank.BankApplication for test class com.tetra.bank.BankApplicationTests
+2023-02-27 19:06:12 INFO Starting BankApplicationTests using Java 19 with PID 18396 (started by Ehsan in C:\Users\Ehsan\Documents\Java Project\bank)
+2023-02-27 19:06:12 INFO No active profile set, falling back to 1 default profile: "default"
+2023-02-27 19:06:13 INFO Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-27 19:06:13 INFO Finished Spring Data repository scanning in 100 ms. Found 1 JPA repository interfaces.
+2023-02-27 19:06:14 INFO HikariPool-1 - Starting...
+2023-02-27 19:06:15 INFO HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:87e0df2b-bcca-4588-8723-3494acc0b359 user=SA
+2023-02-27 19:06:15 INFO HikariPool-1 - Start completed.
+2023-02-27 19:06:15 INFO HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-27 19:06:15 INFO HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-27 19:06:15 WARN HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-27 19:06:16 INFO HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-02-27 19:06:17 INFO HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-27 19:06:17 INFO Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-27 19:06:18 WARN spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-27 19:06:19 INFO Started BankApplicationTests in 6.723 seconds (process running for 9.384)
+2023-02-27 19:06:19 INFO Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-27 19:06:19 INFO HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-02-27 19:06:19 INFO HikariPool-1 - Shutdown initiated...
+2023-02-27 19:06:19 INFO HikariPool-1 - Shutdown completed.
