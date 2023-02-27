@@ -14,9 +14,9 @@
             </PatternLayout>
             <Policies>
                 <OnStartupTriggeringPolicy/>
-                <SizeBasedTriggerinPolicy
+                <SizeBasedTriggeringPolicy
                     size="30Mb"/>
-                <TimeBaseTriggeringPolicy/>
+                <TimeBasedTriggeringPolicy/>
             </Policies>
         </RollingFile>
         <Async name="AsyncAppender">
